@@ -31,17 +31,19 @@ module Telegrambot::Types
     attribute :pinned_message, Message
 
     alias t_s text
-
+    # @return [Boolean]
     def command?
         entities.first.type == "bot_command"
     end
 
+    # @return [String]
     def command
       if command?
         text.slice(entities.first.offset, entities.first.length)
       end
     end
 
+    # @return [String]
     def arguments
       if command?
         text.gsub(command, '').strip

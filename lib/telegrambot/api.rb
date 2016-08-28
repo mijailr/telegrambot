@@ -10,33 +10,13 @@ module Telegrambot
         Telegrambot::Types::InlineKeyboardMarkup
     ].freeze
 
-    # INLINE_QUERY_RESULT_TYPES = [
-    #     Telegrambot::Types::InlineQueryResultArticle,
-    #     Telegrambot::Types::InlineQueryResultPhoto,
-    #     Telegrambot::Types::InlineQueryResultGif,
-    #     Telegrambot::Types::InlineQueryResultMpeg4Gif,
-    #     Telegrambot::Types::InlineQueryResultVideo,
-    #     Telegrambot::Types::InlineQueryResultAudio,
-    #     Telegrambot::Types::InlineQueryResultVoice,
-    #     Telegrambot::Types::InlineQueryResultDocument,
-    #     Telegrambot::Types::InlineQueryResultLocation,
-    #     Telegrambot::Types::InlineQueryResultVenue,
-    #     Telegrambot::Types::InlineQueryResultContact,
-    #     Telegrambot::Types::InlineQueryResultCachedPhoto,
-    #     Telegrambot::Types::InlineQueryResultCachedGif,
-    #     Telegrambot::Types::InlineQueryResultCachedMpeg4Gif,
-    #     Telegrambot::Types::InlineQueryResultCachedSticker,
-    #     Telegrambot::Types::InlineQueryResultCachedDocument,
-    #     Telegrambot::Types::InlineQueryResultCachedVideo,
-    #     Telegrambot::Types::InlineQueryResultCachedVoice,
-    #     Telegrambot::Types::InlineQueryResultCachedAudio
-    # ].freeze
-
     def initialize(token)
       @token = token
     end
 
     private_instance_methods :snakecase
+    # Convierte un camelCase a snake_case
+    # @return String
     def self.snakecase(endpoint)
       endpoint.to_s.gsub(/::/, '/').
       gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').
@@ -45,6 +25,12 @@ module Telegrambot
       downcase
     end
 
+
+    # Endpoints de Telegram Bot API (Metaprogramming)
+    # @see https://core.telegram.org/bots/api#available-methods
+    # @return [Hash]
+    # @raise [Telegrambot::Exceptions::ResponseError]
+    # @param raw_params [Hash] Hash de opciones de telegram
     %w(
         getUpdates setWebhook getMe sendMessage forwardMessage sendPhoto
         sendAudio sendDocument sendSticker sendVideo sendVoice sendLocation
@@ -63,6 +49,8 @@ module Telegrambot
 
     private
 
+    # Convierte un snake_case a camelCase
+    # @return String
     def camelcase(endpoint)
       words = endpoint.split('_')
       words.drop(1).map(&:capitalize!)

@@ -57,7 +57,7 @@ Para web hook es la misma lógica, si usas ruby on rails es más sensillo.
 def webhook
   bot_token = "213652360:AAGYiBuAslikmBFnO9zvgwns2ckWDVKOpJg"
   bot = Telegrambot::Client.new(bot_token)
-  mensaje = bot.listen(params)
+  mensaje = bot.listen_webhook(params)
   # De aquí en adelante lo puedes usar como un objeto Telegrambot::Types::Message
   # También puedes saber si el mensaje trae un `bot_command`
   if mensaje.command?
@@ -68,6 +68,7 @@ def webhook
 end
 ```
 
+Si no usas rails, asegurate que `params` sea un hash.
 ## License
 
  [GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt).

@@ -1,7 +1,8 @@
 module Telegrambot::Types
   class Base
     include Virtus.model
-
+    
+    # @return [Hash]
     def to_compact_hash
       Hash[attributes.dup.delete_if { |_, v| v.nil? }.map do |key, value|
             value =
@@ -10,7 +11,6 @@ module Telegrambot::Types
               else
                 value
               end
-
             [key, value]
       end]
     end

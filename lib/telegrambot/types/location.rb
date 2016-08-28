@@ -1,5 +1,5 @@
 module Telegrambot::Types
-  class Location < Base
+  class Location < Base    
     attribute :longitude, Float
     attribute :latitude, Float
   end
