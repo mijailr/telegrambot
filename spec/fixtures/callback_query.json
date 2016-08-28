@@ -1,0 +1,124 @@
+{
+	"update_id": 113110124,
+	"callback_query": {
+		"id": "462564676191582688",
+		"from": {
+			"id": 107699231,
+			"first_name": "Mijail",
+			"last_name": "Rondon",
+			"username": "MijailR"
+		},
+		"message": {
+			"message_id": 11794,
+			"from": {
+				"id": 121887715,
+				"first_name": "@PatriaBOT",
+				"username": "PatriaBOT"
+			},
+			"chat": {
+				"id": -160175187,
+				"title": "dem",
+				"type": "group"
+			},
+			"date": 1472228872,
+			"reply_to_message": {
+				"message_id": 11793,
+				"from": {
+					"id": 98704159,
+					"first_name": "Jiami :-)",
+					"username": "Jiami_carol"
+				},
+				"chat": {
+					"id": -160175187,
+					"title": "dem",
+					"type": "group"
+				},
+				"date": 1472228871,
+				"text": "/t Enviado desde @PatriaBOT",
+				"entities": [{
+					"type": "bot_command",
+					"offset": 0,
+					"length": 2
+				}, {
+					"type": "mention",
+					"offset": 17,
+					"length": 10
+				}]
+			},
+			"text": "El tweet ha sido enviado correctamente, puedes verlo en este enlace: \n https://twitter.com/jiami_carol/status/769209755659370496\n\n Ha sido retuiteado 0 veces.",
+			"entities": [{
+				"type": "text_link",
+				"offset": 71,
+				"length": 57,
+				"url": "https://twitter.com/jiami_carol/status/769209755659370496"
+			}, {
+				"type": "bold",
+				"offset": 150,
+				"length": 7
+			}]
+		},
+		"data": "769209755659370496"
+	},
+	"webhook": {
+		"update_id": 113110124,
+		"callback_query": {
+			"id": "462564676191582688",
+			"from": {
+				"id": 107699231,
+				"first_name": "Mijail",
+				"last_name": "Rondon",
+				"username": "MijailR"
+			},
+			"message": {
+				"message_id": 11794,
+				"from": {
+					"id": 121887715,
+					"first_name": "@PatriaBOT",
+					"username": "PatriaBOT"
+				},
+				"chat": {
+					"id": -160175187,
+					"title": "dem",
+					"type": "group"
+				},
+				"date": 1472228872,
+				"reply_to_message": {
+					"message_id": 11793,
+					"from": {
+						"id": 98704159,
+						"first_name": "Jiami :-)",
+						"username": "Jiami_carol"
+					},
+					"chat": {
+						"id": -160175187,
+						"title": "dem",
+						"type": "group"
+					},
+					"date": 1472228871,
+					"text": "/t Enviado desde @PatriaBOT",
+					"entities": [{
+						"type": "bot_command",
+						"offset": 0,
+						"length": 2
+					}, {
+						"type": "mention",
+						"offset": 17,
+						"length": 10
+					}]
+				},
+				"text": "El tweet ha sido enviado correctamente, puedes verlo en este enlace: \n https://twitter.com/jiami_carol/status/769209755659370496\n\n Ha sido retuiteado 0 veces.",
+				"entities": [{
+					"type": "text_link",
+					"offset": 71,
+					"length": 57,
+					"url": "https://twitter.com/jiami_carol/status/769209755659370496"
+				}, {
+					"type": "bold",
+					"offset": 150,
+					"length": 7
+				}]
+			},
+			"data": "769209755659370496"
+		}
+	}
+}

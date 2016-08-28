@@ -1,0 +1,52 @@
+{
+	"update_id": 113110614,
+	"message": {
+		"message_id": 12134,
+		"from": {
+			"id": 107699231,
+			"first_name": "Mijail",
+			"last_name": "Rondon",
+			"username": "MijailR"
+		},
+		"chat": {
+			"id": 107699231,
+			"first_name": "Mijail",
+			"last_name": "Rondon",
+			"username": "MijailR",
+			"type": "private"
+		},
+		"date": 1472355778,
+		"text": "/t",
+		"entities": [{
+			"type": "bot_command",
+			"offset": 0,
+			"length": 2
+		}]
+	},
+	"webhook": {
+		"update_id": 113110614,
+		"message": {
+			"message_id": 12134,
+			"from": {
+				"id": 107699231,
+				"first_name": "Mijail",
+				"last_name": "Rondon",
+				"username": "MijailR"
+			},
+			"chat": {
+				"id": 107699231,
+				"first_name": "Mijail",
+				"last_name": "Rondon",
+				"username": "MijailR",
+				"type": "private"
+			},
+			"date": 1472355778,
+			"text": "/t",
+			"entities": [{
+				"type": "bot_command",
+				"offset": 0,
+				"length": 2
+			}]
+		}
+	}
+}
