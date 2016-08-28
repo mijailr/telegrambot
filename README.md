@@ -1,4 +1,4 @@
-# Telegrambot
+# Telegrambot [![Build Status](https://travis-ci.org/mijailr/telegrambot.svg?branch=master)](https://travis-ci.org/mijailr/telegrambot)
 (iba a escribir este readme en ingles, pero luego dije: "¿pa qué?")
 
 Otro wrapper de Telegram, resulta que los que habían por allí no funcionaban como yo necesitaba, por lo que escribí esta a mi gusto.
