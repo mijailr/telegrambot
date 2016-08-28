@@ -15,10 +15,6 @@ describe Telegrambot::Client do
     expect(message.command).to eq("/command")
     expect(message.arguments).to eq("many arguments")
   end
-  it ".send_message" do
-    skip "modify chat_id"
-    puts subject.api.send_message(text: "hola", chat_id: -160175187)
-  end
   it ".get_updates" do
     updates = subject.api.get_updates()
     expect(updates["ok"]).to eq(true)
