@@ -1,9 +1,6 @@
 module Telegrambot::Types
   class InlineKeyboardMarkup < Base
-    
-    
     attribute :inline_keyboard, Array[Array[InlineKeyboardButton]]
-
     # @return [Hash]
     def to_compact_hash
       hsh = super
